@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CPF Validator</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+        />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <div id="main-header">
+                <div id="header-icon">
+                    <i class="bi bi-shield-shaded"></i>
+                    <h1>Validar CPF</h1>
+                </div>
+                <h2>
+                    Verifique rapidamente se um CPF possui uma estrutura válida
+                </h2>
+            </div>
+
+            <div id="input">
+                <div id="input-box">
+                    <i class="bi bi-person"></i>
+                    <input
+                        type="text"
+                        name="cpf"
+                        id="cpf"
+                        placeholder="Digite o CPF (ex: 123.456.789.00)"
+                    />
+                </div>
+                <button type="button" id="cpf-verify">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+
+            <div id="texto">
+                <h2>Olá, bem-vindo!</h2>
+                <p>
+                    Verifique rapidamento se um CPF possui uma estrutura válida
+                    de acordo com as regras oficiais de cálculo dos dígitos
+                    verificadores. Basta informar o número do CPF para realizar
+                    a validação de forma
+                    <strong>simples, rápida e gratuita.</strong>
+                </p>
+            </div>
+            <div id="main-footer">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <p>
+                    <strong>Atenção:</strong> Este sistema valida apenas a
+                    estrutura matemática do CPF<br />
+                    e não consulta a Receita Federal ou bases oficiais.
+                </p>
+            </div>
+        </main>
+    </body>
+</html>
