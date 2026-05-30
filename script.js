@@ -9,13 +9,8 @@ const isCpfValid = (cpf) => {
         for (let i = 0; i < 9; i++) {
             total += parseInt(cpfLimpo.charAt(i) * (10 - i));
         }
-
         let digito1 = (total * 10) % 11;
-        if (digito1 == 10) {
-            digito1 = 0;
-        } else if (digito1 == 11) {
-            digito1 = 1;
-        }
+        digito1 == 10 ? (digito1 = 0) : digito1;
 
         total = 0;
         // Digito 2:
@@ -23,12 +18,7 @@ const isCpfValid = (cpf) => {
             total += parseInt(cpfLimpo.charAt(i) * (11 - i));
         }
         let digito2 = (total * 10) % 11;
-
-        if (digito2 == 10) {
-            digito2 = 0;
-        } else if (digito2 == 11) {
-            digito2 = 1;
-        }
+        digito2 == 10 ? (digito2 = 0) : digito2;
 
         // Validação:
         if (digito1 == cpfLimpo.charAt(9) && digito2 == cpfLimpo.charAt(10)) {
